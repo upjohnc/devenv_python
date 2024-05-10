@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "devenv-stuff"
+version = "0.1.0"
+description = ""
+authors = ["Chad Upjohn <chad.upjohn@pinnsg.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+request2 = "^0.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
