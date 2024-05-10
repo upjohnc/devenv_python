@@ -2,7 +2,7 @@
 
 {
   languages.python.enable = true;
-  languages.python.version = "3.11";
+  languages.python.version = "3.12";
 
   # https://devenv.sh/basics/
   env.GREET = "devenv";
@@ -25,13 +25,12 @@
 
   enterShell = ''
     hello
-    poetry_dev
   '';
 
   # https://devenv.sh/tests/
   enterTest = ''
     echo "Running tests to confirm environment"
-    python --version | grep 3.11
+    python --version | grep 3.12
   '';
 
   # https://devenv.sh/services/
