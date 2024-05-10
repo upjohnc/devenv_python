@@ -25,6 +25,7 @@
 
   enterShell = ''
     hello
+    poetry_dev
   '';
 
   # https://devenv.sh/tests/
